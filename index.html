@@ -177,7 +177,8 @@
     <h2 class="section-title">Contact</h2>
 
     <div class="contact__container bd-grid">
-        <form action="" class="contact__form">
+        <form id="contactForm" class="contact__form">
+
 
             <label for="name">Name</label>
             <input type="text" id="name" placeholder="Enter your full name" class="contact__input">
@@ -216,5 +217,37 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        <script>
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const description = document.getElementById("Description").value;
+
+    console.log("DEBUG: form submit clicked", { name, email, description });
+
+    try {
+      const res = await fetch("http://localhost:5000/contact", {
+
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, description })
+      });
+
+      console.log("DEBUG: fetch returned", res.status, res.statusText);
+      const data = await res.json();
+      console.log("DEBUG: response JSON", data);
+      alert(data.message || data.error);
+    } catch (err) {
+      console.error("DEBUG: fetch error", err);
+      alert("Something went wrong. Check console.");
+    }
+  });
+</script>
+
+
     </body>
 </html>
