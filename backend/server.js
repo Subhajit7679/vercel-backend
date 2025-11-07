@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const nodemailer = require("nodemailer");
 require("dotenv").config();
+
 console.log("ENV EMAIL_USER:", process.env.EMAIL_USER);
 console.log("ENV EMAIL_PASS:", process.env.EMAIL_PASS ? "✅ Loaded" : "❌ Missing");
 
@@ -35,7 +36,7 @@ app.post("/contact", async (req, res) => {
     // Send email
     await transporter.sendMail({
       from: `"Portfolio Contact" <${process.env.EMAIL_USER}>`,
-      to: "sarojmaity888@gmail.com",   // ✅ your receiving email
+      to: `<${process.env.EMAIL_USER}>, <${email}>`,   // ✅ your receiving email
       subject: `Portfolio Contact - ${name}`,
       text: `From: ${name} (${email})\n\n${description}`,
     });
