@@ -55,3 +55,55 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+
+
+
+
+
+const roles = [
+  "MERN Stack Developer",
+  "AI Enthusiast",
+  "Full Stack Developer",
+  "Java Developer",
+  "React Developer",
+  "Problem Solver"
+];
+
+let roleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeRole() {
+  const currentRole = roles[roleIndex];
+  const typingElement = document.getElementById("typing-role");
+
+  if (!typingElement) return;
+
+  if (!isDeleting) {
+    typingElement.textContent =
+      currentRole.substring(0, charIndex + 1);
+
+    charIndex++;
+
+    if (charIndex === currentRole.length) {
+      isDeleting = true;
+      setTimeout(typeRole, 1500);
+      return;
+    }
+  } else {
+    typingElement.textContent =
+      currentRole.substring(0, charIndex - 1);
+
+    charIndex--;
+
+    if (charIndex === 0) {
+      isDeleting = false;
+      roleIndex = (roleIndex + 1) % roles.length;
+    }
+  }
+
+  setTimeout(typeRole, isDeleting ? 60 : 120);
+}
+
+typeRole();

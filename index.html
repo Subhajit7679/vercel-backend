@@ -7,16 +7,21 @@
         <link rel="stylesheet" href="assets/css/styles.css">
 
         <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link
+         rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
 
-        <title>Portfolio website complete</title>
+
+
+        <title>Subhajit Maity Portfolio website </title>
     </head>
     <body>
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a href="#" class="nav__logo">Subhajit</a>
+                    <a href="#" class="nav__logo">Subhajit Maity</a>
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
@@ -24,8 +29,20 @@
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Project</a></li>
+                        <li class="nav__item"><a href="#Experience" class="nav__link">Work</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item">
+
+                          <a href="assets/resume/Subhajit_Maity_Resume.pdf"
+                             
+                             class="nav__link">
+
+                            Resume
+
+                          </a>
+
+                        </li>
                     </ul>
                 </div>
 
@@ -37,162 +54,639 @@
 
         <main class="l-main">
             <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Subhajit</span><br> Web Developer</h1>
-                      <h1 class="home__title">
+            <section class="hero" id="home">
 
-                    <a href="#" class="button">Contact</a>
-                </div>
+    <div class="hero-container">
 
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/subhajit-maity-9090a8253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://www.instagram.com/its__subho__jit?igsh=MW9tejQ1MWZoMGFsYw==" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://github.com/Subhajit7679" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
+        <div class="hero-content">
 
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/profile1.png"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
+            <p class="hero-tag">
+                👋 Welcome to my Portfolio
+            </p>
+
+            <h1>
+                Hi, I'm
+                <span>Subhajit Maity</span>
+            </h1>
+
+            <h2 class="hero-subtitle">
+                <span id="typing-role"></span>
+            </h2>
+
+            <p class="hero-description">
+
+                MERN Stack Developer passionate about
+                building scalable web applications and
+                AI-powered solutions using React.js,
+                Node.js, Express.js and MongoDB.
+
+            </p>
+<div class="hero-badges">
+
+    <span>Open To Work</span>
+
+    <span>MERN Stack</span>
+
+    <span>AI Projects</span>
+
+</div>
+
+            <div class="hero-buttons">
+
+                <a href="assets/resume/Subhajit_Maity_Resume.pdf"download class="btn-primary">
+                    Download Resume
+                </a>
+
+                <a href="#projects" class="btn-secondary">
+                    View Projects
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="assets/img/profile1.png" alt="Subhajit">
+
+        </div>
+
+    </div>
+
+  <!--===== stats =====-->
+
+</section>
+<section class="stats">
+
+    <div class="stats-container">
+
+        <div class="stat-card">
+            <h2>3+</h2>
+            <p>Projects Built</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>MERN</h2>
+            <p>Full Stack Developer</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>B.Tech</h2>
+            <p>Information Technology</p>
+              <p>2022-2026</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>1</h2>
+            <p>Industry Internship</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+ <!--===== journey =====-->
+<section class="journey">
+
+    <div class="journey-content">
+
+        <span>MY JOURNEY</span>
+
+        <h2>
+            Turning Ideas Into
+            Scalable Web Applications
+        </h2>
+
+        <p>
+            As a B.Tech Information Technology graduate,
+            I specialize in MERN Stack development and
+            AI-powered solutions that solve real-world problems.
+        </p>
+
+    </div>
+
+</section>
+
+
 
             <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
+<section class="about section" id="about">
 
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about1.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am Subhajit</h2>
-                        <p class="about__text">I have a strong foundation in IT, with proven analytical and problem-solving skills. Detail-oriented and tech-savvy, I stay current with emerging technologies and excel in adapting to the industry’s evolving demands, driven by a passion for continuous learning and innovation.</p>           
-                    </div>                                   
+    <div class="about-header">
+        <span>ABOUT ME</span>
+        <h2>Passionate Developer Building Real-World Solutions</h2>
+    </div>
+
+    <div class="about-wrapper">
+
+        <div class="about-left">
+            <img src="assets/img/profile1.png" alt="Subhajit">
+        </div>
+
+        <div class="about-right">
+
+            <h3>B.Tech Information Technology Graduate</h3>
+
+            <p>
+                I'm Subhajit Maity, a MERN Stack Developer passionate about
+                creating scalable web applications and AI-powered solutions.
+                I enjoy turning ideas into practical products that solve
+                real-world problems.
+            </p>
+
+            <p>
+                My expertise includes React.js, Node.js, Express.js,
+                MongoDB, JavaScript, REST APIs and Python. I have developed
+                projects like SkillBridge AI and a Full Stack Ecommerce
+                Platform, demonstrating strong full-stack development
+                and problem-solving skills.
+            </p>
+
+            <div class="about-highlights">
+
+                <div class="highlight">
+                    <h4>3+</h4>
+                    <span>Projects Built</span>
                 </div>
-            </section>
 
+                <div class="highlight">
+                    <h4>MERN</h4>
+                    <span>Full Stack</span>
+                </div>
+
+                <div class="highlight">
+                    <h4>2026</h4>
+                    <span>Graduate</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
             <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
+ <section id="skills" class="skills-section">
 
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Tech-savvy IT professional with strong problem-solving skills, adaptable to emerging technologies, and driven by continuous learning.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
+    <div class="section-header">
+        <span>TECH STACK</span>
+        <h2>Technologies I Work With</h2>
+        <p>
+            Modern technologies and tools I use to build
+            scalable web applications and AI-powered solutions.
+        </p>
+    </div>
 
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        
-                              
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
+    <div class="skills-grid">
+        
+        <div class="skill-card">
+            <h3>  <i class="fa-solid fa-code">  </i>Frontend</h3>
+
+            <div class="skill-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>React.js</span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <h3>  <i class="fa-solid fa-server"></i>  Backend</h3>
+
+            <div class="skill-tags">
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>REST API</span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <h3> <i class="fa-solid fa-database"></i>  Database</h3>
+
+            <div class="skill-tags">
+                <span>MongoDB</span>
+                <span>SQLite</span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <h3> <i class="fa-solid fa-toolbox"></i>  Tools</h3>
+
+            <div class="skill-tags">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Python</span>
+                <span>VS Code</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
 
             <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
+<section id="projects" class="projects-section">
 
-                <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a>
+  <div class="section-header">
+      <span>MY WORK</span>
+      <h2>Featured Projects</h2>
+      <p>
+        Real-world applications showcasing my MERN Stack
+        and AI development skills.
+      </p>
+  </div>
+
+  <div class="projects-grid">
+
+      <!-- Project 1 -->
+      
+      <div class="project-card">
+        <span class="project-number">01</span>
+          <div class="project-image">
+              <img src="assets/img/skillbridge.png" alt="">
+          </div>
+
+          <div class="project-content">
+
+              <h3>SkillBridge AI</h3>
+
+              <p>
+                  AI-powered Resume Analyzer with ATS scoring,
+                  skill gap analysis, Resume Builder, job Search, real time job seaker and job role recommendation.
+              </p>
+                <div class="project-features">
+                 85% ATS Scoring • Resume Builder • AI Job Matching
+                  </div>
+
+              <div class="project-tech">
+                  <span>Python</span>
+                  <span>NLP</span>
+                  <span>Streamlit</span>
+                  <span>SQLite</span>
+              </div>
+
+              <div class="project-links">
+                  <a href="https://skill-bridgeai.streamlit.app/"> <i class="fa-solid fa-arrow-up-right-from-square"></i>  Live Demo</a>
+                  <a href="https://github.com/Subhajit7679/SkillBridge-AI"> <i class="fa-brands fa-github"></i>  GitHub</a>
+              </div>
+
+          </div>
+
+      </div>
+
+      <!-- Project 2 -->
+
+      <div class="project-card">
+        <span class="project-number">02</span>
+          <div class="project-image">
+              <img src="assets/img/mordenshop.png" alt="">
+          </div>
+
+          <div class="project-content">
+
+              <h3>MordenShop</h3>
+
+              <p>
+                  A fully featured Ecommerce web application built using the MERN Stack with secure authentication and Razorpay payment integration.
+              </p>
+                <div class="project-features">
+                 20+ Features • Razorpay • Admin Dashboard </div>
+                
+              <div class="project-tech">
+                  <span>React.js</span>
+                  <span>MongoDB</span>
+                  <span>Express</span>
+                  <span>Node</span>
+              </div>
+
+              <div class="project-links">
+                  <a href="https://mordensop.vercel.app/"> <i class="fa-solid fa-arrow-up-right-from-square"></i>  Live Demo</a>
+                  <a href="https://github.com/Subhajit7679/Modern-shop-ecommerce"> <i class="fa-brands fa-github"></i>  GitHub</a>
+              </div>
+
+          </div>
+
+      </div>
+
+      <!-- Project 3 -->
+
+       <div class="project-card">
+          <span class="project-number">03</span>
+          <div class="project-image">
+              <img src="assets/img/protfolio.png" alt="">
+          </div>
+
+          <div class="project-content">
+
+              <h3>Portfolio Website</h3>
+
+              <p>
+                  Modern responsive portfolio website showcasing projects,
+skills, experience and development journey with smooth
+animations and clean UI/UX design.
+              </p>
+                <div class="project-features">
+               100% Responsive • Smooth Animations • Modern UI</p>
                 </div>
-            </section>
+              <div class="project-tech">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>UI/UX</span>
+              </div>
+
+              <div class="project-links">
+                  <a href="https://subhajitmaity.vercel.app/"> <i class="fa-solid fa-arrow-up-right-from-square"></i>  Live Demo</a>
+                  <a href="https://github.com/Subhajit7679/My-Protfolio"> <i class="fa-brands fa-github"></i>  GitHub</a>
+              </div>
+
+          </div>
+
+      </div>
+
+  </div>
+
+</section>
+
+                      <!--===== Education=====-->
+<section id="education" class="education-section">
+
+    <div class="section-header">
+        <span>EDUCATION</span>
+        <h2>Academic Journey</h2>
+        <p>
+            Building a strong foundation in Information Technology,
+            Software Development and Problem Solving.
+        </p>
+    </div>
+
+    <div class="timeline">
+
+        <!-- BTech -->
+
+        <div class="timeline-item">
+
+            <div class="timeline-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+
+            <div class="education-card">
+
+                <span class="education-year">
+                    2022 - 2026
+                </span>
+
+                <h3>B.Tech in Information Technology</h3>
+
+                <h4>
+                    Bengal College of Engineering & Technology
+                </h4>
+
+                <p>
+                    Affiliated to Maulana Abul Kalam Azad University
+                    of Technology (MAKAUT)
+                </p>
+
+                <div class="education-score">
+                 CGPA 7.3
+                </div>
+
+<div class="education-tags">
+    <span>Web Development</span>
+    <span>Database Systems</span>
+    <span>Software Engineering</span>
+</div>
+
+            </div>
+
+        </div>
+
+        <!-- Higher Secondary -->
+
+        <div class="timeline-item">
+
+            <div class="timeline-icon">
+                <i class="fa-solid fa-school"></i>
+            </div>
+
+            <div class="education-card">
+
+                <span class="education-year">
+                    2021 - 2022
+                </span>
+
+                <h3>Higher Secondary Education</h3>
+
+                <h4>
+                    Malbandi Ashutosh Vidyamandir
+                </h4>
+
+                <p>
+                    West Bengal Council of Higher Secondary Education
+                </p>
+
+                <div class="education-score">
+                   86.2% ★ Distinction
+                </div>
+
+<div class="education-tags">
+    <span>Physics</span>
+    <span>Chemistry</span>
+    <span>Mathematics</span>
+    <span>Biology</span>
+</div>
+
+            </div>
+
+        </div>
+
+        <!-- Secondary -->
+
+        <div class="timeline-item">
+
+            <div class="timeline-icon">
+                <i class="fa-solid fa-book-open"></i>
+            </div>
+
+            <div class="education-card">
+
+                <span class="education-year">
+                    2019 - 2020
+                </span>
+
+                <h3>Secondary Education</h3>
+
+                <h4>
+                    Malbandi Ashutosh Vidyamandir
+                </h4>
+
+                <p>
+                    West Bengal Board of Secondary Education
+                </p>
+
+                <div class="education-score">
+                      60.2%
+                   </div>
+
+              <div class="education-tags">
+                 <span>Science</span>
+                  <span>Mathematics</span>
+                  <span>Problem Solving</span>
+               </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+  <!--===== Experiance =====-->
+<section class="experience-section" id="Experience">
+
+    <div class="section-header">
+
+        <span>EXPERIENCE</span>
+
+        <h2>Professional Experience</h2>
+
+        <p>
+            Hands-on industry experience developing scalable web
+            applications using the MERN Stack and modern software
+            development practices.
+        </p>
+
+    </div>
+
+    <div class="experience-card">
+
+        <span class="experience-year">
+            May 2025 – July 2025
+        </span>
+
+        <h3>Software Development Intern</h3>
+
+        <h4>Pinnacle Lab Pvt. Ltd. | Remote</h4>
+
+        <p>
+            Developed and deployed features for a live ecommerce
+            application using React.js, Node.js, Express.js and MongoDB.
+            Designed RESTful APIs, optimized frontend performance and
+            collaborated in Agile development workflows using Git and GitHub.
+        </p>
+
+        <div class="experience-tags">
+            <span>React.js</span>
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>MongoDB</span>
+            <span>REST API</span>
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>Agile</span>
+        </div>
+
+    </div>
+
+</section>
 
             <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-    <h2 class="section-title">Contact</h2>
+ <section class="contact-section" id="contact">
 
-    <div class="contact__container bd-grid">
-        <form id="contactForm" class="contact__form">
+    <div class="section-header">
+        <span>GET IN TOUCH</span>
+        <h2>Let's Build Something Together</h2>
+        <p>
+            Have a project in mind or want to collaborate?
+            Feel free to reach out.
+        </p>
+    </div>
 
+    <div class="contact-container">
 
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Enter your full name" class="contact__input">
+        <!-- Left Side -->
+        <div class="contact-info">
 
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Enter your email" class="contact__input">
+            <div class="contact-card">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                    <h4>Email</h4>
+                    <p>subhajitmaity888@gmail.com</p>
+                </div>
+            </div>
 
-            <label for="Description">Description</label>
-            <textarea id="Description" cols="0" rows="10" placeholder="Write your message here" class="contact__input"></textarea>
+            <div class="contact-card">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                    <h4>Phone</h4>
+                    <p>+91 76791 66250</p>
+                </div>
+            </div>
 
-            <input type="submit" value="Submit" class="contact__button button">
+            <div class="contact-card">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <h4>Location</h4>
+                    <p>Kolkata, West Bengal</p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <i class="fa-solid fa-briefcase"></i>
+                <div>
+                    <h4>Status</h4>
+                    <p>Open to Work</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Right Side -->
+        <form class="contact-form" id="contactForm">
+
+            <input
+           type="text"
+              id="name"
+             placeholder="Your Name">
+
+            <input type="email" id="email" placeholder="Your Email">
+
+            <input type="text" placeholder="Subject">
+
+            <textarea
+                id="description"
+                rows="6"
+                placeholder="Write your message here">
+            </textarea>
+
+            <button type="submit" class="contact-btn" id="sendBtn">
+              Send Message
+            </button>
+            <p id="success-msg" style="display:none;"></p>
 
         </form>
+
     </div>
+
+<div class="social-links">
+
+    <a href="https://github.com/Subhajit7679">
+        <i class="fa-brands fa-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/subhajit-maity-9090a8253">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
+
+    <a href="mailto:subhajitmaity888@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+
+</div>
+
 </section>
 
 
@@ -200,16 +694,50 @@
 
 
         <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Subhajit Maity</p>
-            <div class="footer__social">
-                <a href="https://www.facebook.com/share/1CKK6LDZFW/" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="https://www.instagram.com/its__subho__jit?igsh=MW9tejQ1MWZoMGFsYw==" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
-            </div>
-            <p class="footer__copy">© 2025 Subhajit Maity. All rights reserved.</p>
+ <footer class="footer">
 
-        </footer>
+    <div class="footer-content">
+
+        <h2>Subhajit Maity</h2>
+
+        <p>
+            MERN Stack Developer passionate about building
+            scalable web applications and AI-powered solutions.
+        </p>
+
+        <div class="footer-social">
+
+            <a href="https://github.com/Subhajit7679">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/subhajit-maity-9090a8253">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="mailto:subhajitmaity888@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+        </div>
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+        <p class="copyright">
+            © 2025 Subhajit Maity. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
 
 
         <!--===== SCROLL REVEAL =====-->
@@ -218,36 +746,65 @@
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
         <script>
-  const form = document.getElementById("contactForm");
+const form = document.getElementById("contactForm");
 
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const btn = document.getElementById("sendBtn");
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const description = document.getElementById("Description").value;
+btn.disabled = true;
+btn.textContent = "Sending...";
+  const name =
+    document.getElementById("name").value;
 
-    console.log("DEBUG: form submit clicked", { name, email, description });
+  const email =
+    document.getElementById("email").value;
 
-    try {
-      const res = await fetch("http://localhost:5000/contact", {
+  const description =
+    document.getElementById("description").value;
 
+  const formData = {
+    name,
+    email,
+    description
+  };
+
+  try {
+    const response = await fetch(
+      "https://vercel-protfolio-backend.vercel.app/contact",
+      {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, description })
-      });
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+      }
+    );
 
-      console.log("DEBUG: fetch returned", res.status, res.statusText);
-      const data = await res.json();
-      console.log("DEBUG: response JSON", data);
-      alert(data.message || data.error);
-    } catch (err) {
-      console.error("DEBUG: fetch error", err);
-      alert("Something went wrong. Check console.");
-    }
-  });
+    const data = await response.json();
+
+    const successMsg = document.getElementById("success-msg");
+
+     successMsg.textContent = "✅ Message sent successfully!";
+      successMsg.style.display = "block";
+
+    if (response.ok) {
+  form.reset();
+
+  btn.disabled = false;
+  btn.textContent = "Send Message";
+}
+
+  } catch (err) {
+    console.error(err);
+
+       btn.disabled = false;
+         btn.textContent = "Send Message";
+
+    alert("Something went wrong.");
+  }
+});
 </script>
-
 
     </body>
 </html>
